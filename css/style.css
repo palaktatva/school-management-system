@@ -1,0 +1,46 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    ;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.login-section .authentication-left-outer {
+    background-color: #F6F5FD;
+}
+.login-section .authentication-left-outer{
+    max-width: 675px;
+}
+.login-section .authentication-left-outer .authentication-left-inner span,
+p:not(:last-child) {
+    font-weight: 600;
+    font-size: 30px;
+    color: #212121;
+}
+
+.login-section .authentication-left-outer .authentication-left-inner h1 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #F78F1E;
+}
+
+.login-section .authentication-left-outer .authentication-left-inner p:not(:first-child){
+    font-size: 18px;
+    font-weight: 400;
+    color: #212121;
+}
+.content-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
