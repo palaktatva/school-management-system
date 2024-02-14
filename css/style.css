@@ -4,10 +4,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul li{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    max-width: 100%;
+}
+a{
+    display: inline-block;
+}
 
 body {
     font-family: "Poppins", sans-serif;
-    ;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .container {
@@ -19,28 +34,154 @@ body {
 .login-section .authentication-left-outer {
     background-color: #F6F5FD;
 }
-.login-section .authentication-left-outer{
-    max-width: 675px;
+
+.login-section .authentication-left-outer {
+    flex: 0 0 50%;
+    max-width: 50%;
+    
 }
-.login-section .authentication-left-outer .authentication-left-inner span,
-p:not(:last-child) {
-    font-weight: 600;
-    font-size: 30px;
-    color: #212121;
+.login-section .authentication-left-outer .authentication-left-inner {
+    padding: 110px 80px;
 }
 
-.login-section .authentication-left-outer .authentication-left-inner h1 {
+.login-section .authentication-left-outer .authentication-left-inner h2{
     font-weight: 600;
     font-size: 30px;
+    margin-bottom: 10px;
+}
+  
+
+
+.login-section .authentication-left-outer .authentication-left-inner span{
+    display: block;
     color: #F78F1E;
 }
-
-.login-section .authentication-left-outer .authentication-left-inner p:not(:first-child){
-    font-size: 18px;
-    font-weight: 400;
-    color: #212121;
+.login-section .authentication-left-outer .attendance{
+    font-size: 16px;
+    margin-bottom: 30px;
 }
-.content-wrapper{
+
+.authentication-left-inner .authentication-list {
+    padding: 24px;
+}
+.login-section .authentication-left-outer .authentication-left-inner p{
+    font-size: 18px;
+}
+
+.authentication-left-inner .authentication-list li:not(:last-child) {
+    margin-bottom: 14px;
+}
+.authentication-left-inner .authentication-list li::before{
+    content: '';
+    background-image: url(../images/Point.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.content-wrapper {
     display: flex;
     justify-content: space-between;
 }
+
+.authentication-left-inner p:last-child {
+    margin-bottom: 40px;
+}
+
+.authentication-left-inner a {
+    text-decoration: none;
+    font-weight: 600;
+}
+.authentication-left-inner .authentication-btn a::after{
+    position: absolute;
+    content: '';
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 5px;
+    width: 10px;
+    height: 22px;
+}
+
+
+.authentication-left-inner .authentication-btn {
+    padding: 16px 30px;
+    background-color: #FFFFFF;
+    border: 2px solid #f78f1e80;
+    color: #212121;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.login-section .authentication-left-outer .img-wrapper{
+    display: flex;
+}
+.login-section .authentication-left-outer .img-wrapper li{
+  margin-right: 15px;
+}
+.login-section .authentication-left-outer .img-wrapper li a{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #1d8bfa66;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+font-weight: 500;
+font-size: 32px;
+margin-bottom: 30px;
+}
+.authentication-right-outer {
+    margin: auto 0;
+}
+.authentication-right-outer .logo{
+    margin-bottom: 11px;
+}
+
+
+.authentication-right-outer .form-wrapper label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.authentication-right-outer .form-wrapper .form-group{
+    margin-bottom: 30px;
+}
+
+.authentication-right-outer .form-wrapper ::placeholder {
+    font-weight: 400;
+    color: #979797;
+}
+
+.authentication-right-outer .form-wrapper .form-control {
+    width: 100%;
+    padding: 16px 20px;
+    border: 1px solid #ECECEC;   
+    border-radius: 5px;
+}
+.authentication-right-outer .form-wrapper .sign-in-btn{
+    border-radius: 5px;
+    color: #fff;
+    background-color: #F78F1E;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 50px;
+    border: none;
+}
+.authentication-right-outer .password-content p{
+    text-align: center;
+    color: #757575;
+}
+.authentication-right-outer .password-content span{
+    display: block;
+    color: #F78F1E;
+}
+    
