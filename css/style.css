@@ -30,37 +30,38 @@ body {
 }
 
 .content-wrapper {
-    padding: 20px;
+    padding: 30px 16px;
+    min-height: 100vh;
 }
 
 
 .login-section .authentication-left-outer {
     flex: 0 0 50%;
     max-width: 50%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;
+    background-color: #F6F5FD;
     padding: 30px 0;
 }
 
 .login-section .authentication-left-outer .authentication-left-inner {
-    max-width: 512px;
-    margin: 0 auto;
+    max-width: 518px;
     justify-content: center;
     display: flex;
-    min-height: calc(100vh - 150px);
+    height: 100%;
     flex-direction: column;
+    margin: 0 auto;
 }
 
  h2 {
     font-weight: 600;
-    font-size: 29px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
-
-
-.login-section .authentication-left-outer .authentication-left-inner span {
-    display: block;
-    color: #F78F1E;
+.login-section .authentication-left-outer .authentication-left-inner .yellow-text{
+  color: #F78F1E;
 }
 
 .login-section .authentication-left-outer .attendance {
@@ -74,6 +75,10 @@ body {
 
 .login-section .authentication-left-outer .authentication-left-inner p {
     font-size: 18px;
+}
+.login-section .authentication-left-outer .authentication-left-inner.forget-passsword-content{
+    max-width: 333px;
+    color: #878787;
 }
 
 .authentication-left-inner .authentication-list li:not(:last-child) {
@@ -92,7 +97,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    padding: 5px;
+    width: 12px;
+    height: 12px;   
     top: 8px;
     left: -8px;
 }
@@ -108,6 +114,8 @@ body {
 }
 
 .authentication-left-inner a {
+    text-align: center;
+    line-height: 50px;
     text-decoration: none;
     font-weight: 600;
     position: relative;
@@ -121,27 +129,27 @@ body {
     background-position: center;
     background-size: contain;
     padding: 5px;
-    width: 10px;
-    top: 17px;
-    right: 8px;
-    height: 22px;
+    width: 13px;
+    top: 39%;
+    right: 10%;
+    height: 9px;
 }
 
 
-.authentication-left-inner .secondary-btn {
-    padding: 16px 30px;
+.secondary-btn {
     max-width: 177px;
     background-color: #FFFFFF;
     border: 2px solid #f78f1e80;
     color: #212121;
+    height: 54px;
     border-radius: 5px;
     margin-bottom: 30px;
 }
 
 .login-section .authentication-left-outer .img-wrapper {
-    margin: 0 auto;
     display: flex;
-    max-width: 512px;
+    justify-content: center;
+    max-width: 54%;
 }
 
 .login-section .authentication-left-outer .img-wrapper li {
@@ -157,25 +165,44 @@ body {
     align-items: center;
     justify-content: center;
 }
+.login-section .authentication-left-outer .img-wrapper li a:hover{
+    background-color: #1d8bfa1f;
+}
+
 
 h1 {
     font-weight: 500;
     font-size: 32px;
     margin-bottom: 30px;
 }
+.title-wrapper h1{
+    margin-bottom: 17px;
+}
+.title-wrapper p{
+    margin-bottom: 17px;
+    font-size: 18px;
+    max-width: 333px;
+    color: #878787;
+    margin-bottom: 29px;
+}
 
 .authentication-right-outer {
-    margin: 0 auto;
+    flex: 0 0 50%;
+    max-width: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 30px 0;
 
 }
 
 .authentication-right-outer .authentication-right-inner {
-
     justify-content: center;
     display: flex;
-    min-height: calc(100vh - 122px);
+    height: 100%;
     flex-direction: column;
+    min-width: 380px 
 }
 
 .authentication-right-outer .logo {
@@ -183,38 +210,54 @@ h1 {
 }
 
 
-.authentication-right-outer .form-wrapper label {
-    margin-bottom: 8px;
+.form-wrapper label:not(:last-child){
     font-size: 14px;
     font-weight: 400;
 }
-
-.authentication-right-outer .form-wrapper .form-group {
+.form-wrapper .form-group {
     margin-bottom: 30px;
 }
 
-.authentication-right-outer .form-wrapper ::placeholder {
-    font-weight: 400;
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #979797;
-}
+    font-size: 16px;
+  }
+.form-control::-moz-placeholder { /* Firefox 19+ */
+    color: #979797;
+    font-size: 16px;
+   
+  }
+.form-control:-ms-input-placeholder { /* IE 10+ */
+    color: #979797;
+    font-size: 16px;
 
-.authentication-right-outer .form-wrapper .form-control {
+  }
+  .form-control:-moz-placeholder { /* Firefox 18- */
+    color: #979797;
+    font-size: 16px;
+  }
+
+.form-wrapper .form-control {
+    outline: none;
     width: 100%;
-    padding: 16px 20px;
+    line-height: 54px;
+    padding: 0 15px;
     border: 1px solid #ECECEC;
     border-radius: 5px;
+    margin-top: 8px;
 }
 
-.authentication-right-outer .form-wrapper .primary-btn {
+.form-wrapper .primary-btn {
     border-radius: 5px;
     color: #fff;
     background-color: #F78F1E;
     font-size: 18px;
     font-weight: 500;
     width: 100%;
-    padding: 15px 0;
+    line-height: 3;
+    height: 54px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 36px;
     border: none;
 }
 
@@ -223,7 +266,8 @@ h1 {
     color: #757575;
 }
 
-.authentication-right-outer .password-content span {
+.password-content a {
+    text-decoration: none;
     display: block;
     font-weight: 600;
     color: #F78F1E;
@@ -235,49 +279,52 @@ h1 {
     color: #606060;
 }
 
-.authentication-right-outer .footer-botton span {
-    text-decoration: underline;
+.authentication-right-outer .footer-botton a {
+    
+    color: #606060;
     text-decoration-color: #606060;
     font-weight: 600;
 }
 
 
-[type="checkbox"] {
+.form-wrapper [type="checkbox"] {
     opacity: 0;
 }
 
-[type="checkbox"]+label {
+.form-wrapper [type="checkbox"]+label {
     position: relative !important;
     display: inline-block;
-    padding-left: 30px;
+    padding-left: 25px;
+    color: #212121;
+    font-size: 14px;
 
 }
 
-[type="checkbox"]+label::before {
+.form-wrapper [type="checkbox"]+label::before {
     content: " ";
     position: absolute;
-    width: 15px;
-    height: 15px;
-    border: 2px solid #F78F1E;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #F78F1E;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 3px;
     left: 0;
-    top: 0;
+    top: 2px;
 
 }
 
 
-[type="checkbox"]:not(:checked)+label::after {
+.form-wrapper [type="checkbox"]:not(:checked)+label::after {
     content: " ";
     position: absolute;
     background-image: url(../images/arrow-in-remember-me.svg);
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     left: 0;
-    top: 0; 
+    top: 2px; 
     background-repeat: no-repeat;
     background-size: contain;
-    border: 2px solid #F78F1E;
+    border: 1px solid #F78F1E;
     background-color: #F78F1E;
     border-radius: 5px;
 
@@ -293,6 +340,12 @@ h1 {
     }
     .login-section .authentication-left-outer{
         padding: 20px 0;
+    }
+    .authentication-right-outer{
+        margin: 0 auto;
+    } 
+    .login-section .authentication-left-outer .img-wrapper {
+        max-width: 64%;
     }
 
 }
