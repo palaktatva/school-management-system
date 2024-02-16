@@ -38,9 +38,13 @@ body {
 .login-section .authentication-left-outer {
     flex: 0 0 50%;
     max-width: 50%;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;    
     justify-content: space-between;
+=======
+    margin: 0 auto;
+>>>>>>> e4424a03c9bcd040ff5c06e96bafadd09f8a5f8a
     background-color: #F6F5FD;
     padding: 30px 0;
 }
