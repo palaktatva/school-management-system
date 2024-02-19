@@ -152,8 +152,9 @@ body {
 
 .login-section .authentication-left-outer .img-wrapper {
     display: flex;
-    justify-content: center;
-    max-width: 54%;
+    max-width: 516px;
+    margin: 0 auto;
+
 }
 
 .login-section .authentication-left-outer .img-wrapper li {
@@ -348,9 +349,6 @@ h1 {
     .authentication-right-outer{
         margin: 0 auto;
     } 
-    .login-section .authentication-left-outer .img-wrapper {
-        max-width: 64%;
-    }
 
 }
 
