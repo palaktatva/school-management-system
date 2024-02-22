@@ -1,238 +1,613 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Dashboard</title>
 </head>
+
 <body>
     <div class="page-wrapper">
- <header class="site-header">
-    <div class="header-content-wrapper">
-        <div class="header-left-side">
-            <div class="header-left-side-inner">
-                <div class="hamburger-icon">
-                       <img src="images/humbergur-icon.svg" alt="humbergur-icon">
+        <header class="site-header">
+            <div class="header-content-wrapper">
+                <div class="header-left-side">
+                    <div class="header-left-side-inner">
+                        <div class="hamburger-icon">
+                            <img src="images/humbergur-icon.svg" alt="humbergur-icon">
+                        </div>
+                        <div class="img-block">
+                            <img src="images/wade-wore.jpg" alt="wade-wore">
+                        </div>
+                        <div class="email-name-content">
+                            <span>Wade Worem</span>
+                            <a href="mailto:wadewaren@gmail.com">wadewaren@gmail.com</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="img-block">
-                    <img src="images/wade-wore.jpg" alt="wade-wore">
+
+                <div class="header-right-side">
+                    <div class="img-block">
+                        <img src="images/school-blue-logo.svg" alt="school-logo">
+                    </div>
+                    <div class="school-name">
+                        <p>Nodoworry School</p>
+                    </div>
                 </div>
-                <div class="email-name-content">
-                    <span>Wade Worem</span>            
-                    <a href="mailto:wadewaren@gmail.com">wadewaren@gmail.com</a> 
-                </div>
-            </div>
-        </div>
-            
-            <div class="header-right-side">
-                <div class="img-block">
-                    <img src="images/school-blue-logo.svg" alt="school-logo">                    
-                </div>
-                <div class="school-name">
-                <p>Nodoworry School</p>
-            </div>
-            </div>
-    
 
 
+
+            </div>
+        </header>
+
+        <aside class="side-navigation">
+            <div class="nav-wrapper">
+                <div class="logo-block">
+                    <img src="images/school-managment-system-logo.svg" alt="logo">
+                </div>
+
+                <nav class="nav-section">
+
+                    <ul class="nav-listing">
+                        <li>
+                            <a href="" class="active">
+                                <em>
+                                    <img src="images/home-white.svg" alt="home" class="active-icon">
+                                    <img src="images/home.svg" alt="home" class="normal-icon">
+                                </em>
+                                Home </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <em>
+                                    <img src="images/my-school-white.svg" alt="my-school" class="active-icon">
+                                    <img src="images/my-school.svg" alt="my-school" class="normal-icon">
+                                </em>
+                                My Schools</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <em>
+                                    <img src="images/message-white.svg" alt="message" class="active-icon">
+                                    <img src="images/message.svg" alt="message" class="normal-icon">
+                                </em>
+                                Messages</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <em>
+                                    <img src="images/group-white.svg" alt="group" class="active-icon">
+                                    <img src="images/group.svg" alt="group" class="normal-icon">
+                                </em>
+                                Groups</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <em>
+                                    <img src="images/user-and-role-white.svg" alt="user-and-role" class="active-icon">
+                                    <img src="images/user-and-role.svg" alt="user-and-role" class="normal-icon">
+                                </em>
+                                Users and Roles</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <em>
+                                    <img src="images/school-details-white.svg" alt="school-details" class="active-icon">
+                                    <img src="images/school-details.svg" alt="school-details" class="normal-icon">
+                                </em>
+                                School Details</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <em>
+                                    <img src="images/data-management-white.svg" alt="data-management"
+                                        class="active-icon">
+                                    <img src="images/data-management.svg" alt="data-management" class="normal-icon">
+                                </em>
+                                Data Management</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <em>
+                                    <img src="images/my-account-white.svg" alt="my-account" class="active-icon">
+                                    <img src="images/my-account.svg" alt="my-account" class="normal-icon">
+                                </em>
+                                My Account</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <em>
+                                    <img src="images/contact-and-help-white.svg" alt="contact-and-help"
+                                        class="active-icon">
+                                    <img src="images/contact-and-help.svg" alt="contact-and-help" class="normal-icon">
+                                </em>
+                                Contacts and Help</a>
+                        </li>
+
+                    </ul>
+            </div>
+            </nav>
+
+            <div class="footer-wrapper">
+                <div class="logout-section">
+                    <a href="">
+                        <em>
+                            <img src="images/logout.svg" alt="">
+                        </em>
+                        Logout </a>
+
+                </div>
+                <div class="footer-bottom">
+                    <p><a href="">School management</a> | ©2023</P>
+                </div>
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+            <div class="page-inner-content">
+
+                <div class="custom-title-content">
+                    <div class="title-block">
+                        <h1 class="title">Home</h1>
+                    </div>
+                    <div class="title-content">
+                        <p>Last Refreshed 05/12/20222</p>
+                    </div>
+                </div>
+
+
+
+                <div class="emergency-holiday-content-wrapper">
+                    <div class="emergency-content-wrapper">
+
+                        <div class="emergency-inner-content-wrapper">
+
+                            <div class="image-block">
+                                <img src="images/emergency-icon.svg" alt="emergency-icon">
+                            </div>
+
+                            <div class="emergency-content">
+                                <h2>Send <strong>Emergency Alert </strong> to all school</h2>
+                                <a href="" title="emergency-alert"><img src="images/emergency-alert-icon.svg"
+                                        alt="emergency-alert">Emergency Alert send now</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="holiday-content-wrapper">
+                        <div class="holiday-outer-content-wrapper">
+                            <div class="holiday-inner-content-wrapper">
+                                <div class="image-block">
+                                    <img src="images/holiday-closure.png" alt="emergency-icon">
+                                </div>
+
+                                <div class="holiday-content">
+                                    <h2>School-links Holiday closure</h2>
+                                    <p class="text">It’s that time of year again when everyone is gearing up to end 2022
+                                        with
+                                        Christmas and New Year festivities Check fu..</p>
+                                    <div class="holiday-bottom-content-wrapper">
+
+                                        <div class="date-content">
+                                            <img src="images/date.svg" alt="date">
+                                            <p>02/12/2022</p>
+                                        </div>
+                                        <div class="read-more-content">
+                                            <a href="#" title="Read-more">Read more</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="count-block">
+                <div class="count-block-wrapper">
+                    <div class="content-wrapper">
+                        <div class="image-block">
+                            <img src="images/message-delivered.svg" alt="">
+                        </div>
+                        <div class="count-block-content">
+                            <p>Delivery confirmed</p>
+                            <span>77</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="count-block-wrapper">
+                    <div class="content-wrapper">
+                        <div class="image-block red">
+                            <img src="images/message-failed.svg" alt="">
+                        </div>
+                        <div class="count-block-content">
+                            <p>Delivery failed messages</p>
+                            <span class="red">20</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="count-block-wrapper">
+                    <div class="content-wrapper">
+                        <div class="image-block blue">
+                            <img src="images/message-bounce.svg" alt="">
+                        </div>
+                        <div class="count-block-content">
+                            <p>Bounced messages</p>
+                            <span class="blue">25</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="table-content-wrapper">
+                <div class="custom-title-content">
+                    <div class="title-block">
+                        <h1 class="title">User</h1>
+                    </div>
+                    <div class="title-content">
+                        <a href="#" title="View All">View All</a>
+                    </div>
+                </div>
+
+
+                <div class="table-content-inner-wrapper">
+                    <table class="table-content">
+                        <tr class="border-bottom">
+                            <th>Name</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Last Login</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tr class="border-bottom">
+                            <td>
+                                <div class="user-name-wrapper">
+                                    <div class="image-block">
+                                        <img src="images/user-1.svg" alt="user">
+                                    </div>
+                                    <div class="user-name">Jerome Bell
+                                    </div>
+                            </td>
+
+                            <td><a href=“tel:+61092156867”>+61092156867</a></td>
+
+                            <td><a href=“mailto:jeromebell21@gmail.com”>jeromebell21@gmail.com</a></td>
+
+                            <td>Admin</td>
+
+                            <td>Active</td>
+
+                            <td>2 hr ago</td>
+                            <td>
+                                <div class="image-wrapper">
+                                    <a href="#" title="edit-info" class="btn blue">
+                                        <div class="edit-icon">
+                                            <img src="images/edit.svg" alt="edit-icon">
+                                        </div>
+                                    </a>
+
+                                    <a href="#" title="delete-info" class="btn red">
+                                        <div class="delete-icon">
+                                            <img src="images/delete.svg" alt="delete-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-bottom">
+                            <td>
+                                <div class="user-name-wrapper">
+                                    <div class="image-block">
+                                        <img src="images/user-2.svg" alt="user">
+                                    </div>
+                                    <div class="user-name">Kathryn Murphy
+                                    </div>
+                            </td>
+
+                            <td><a href=“tel:+61488805460”>+61488805460</a></td>
+
+                            <td><a href=“kmurphy@gmail.com”>kmurphy@gmail.com</a></td>
+
+                            <td>Staff</td>
+
+                            <td>Active</td>
+
+                            <td>1 hr ago</td>
+                            <td>
+                                <div class="image-wrapper">
+                                    <a href="#" title="edit-info" class="btn blue">
+                                        <div class="edit-icon">
+                                            <img src="images/edit.svg" alt="edit-icon">
+                                        </div>
+                                    </a>
+
+                                    <a href="#" title="delete-info" class="btn red">
+                                        <div class="delete-icon">
+                                            <img src="images/delete.svg" alt="delete-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-bottom">
+                            <td>
+                                <div class="user-name-wrapper">
+                                    <div class="image-block blue">
+                                        <img src="images/user-3.svg" alt="user">
+                                    </div>
+                                    <div class="user-name"> Kristin Watson
+                                    </div>
+                            </td>
+
+                            <td><a href=“tel:+61488827086”>+61488827086</a></td>
+
+                            <td><a href=“kristinw@gmail.com”>kristinw@gmail.com</a></td>
+
+                            <td>Admin</td>
+
+                            <td>Active</td>
+
+                            <td>1 hr ago</td>
+                            <td>
+                                <div class="image-wrapper">
+                                    <a href="#" title="edit-info" class="btn blue">
+                                        <div class="edit-icon">
+                                            <img src="images/edit.svg" alt="edit-icon">
+                                        </div>
+                                    </a>
+
+                                    <a href="#" title="delete-info" class="btn red">
+                                        <div class="delete-icon">
+                                            <img src="images/delete.svg" alt="delete-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="inactive">
+                            <td>
+                                <div class="user-name-wrapper">
+                                    <div class="image-block">
+                                        <img src="images/user-4.svg" alt="user">
+                                    </div>
+                                    <div class="user-name">Jenny Wilson
+                                    </div>
+                            </td>
+
+                            <td><a href=“tel:+61480025873”>+61480025873</a></td>
+
+                            <td><a href=“mailto:jennnyw@gmail.com”>jennnyw@gmail.com</a></td>
+
+                            <td>Staff</td>
+
+                            <td>Inactive</td>
+
+                            <td>3 hr ago</td>
+                            <td>
+                                <div class="image-wrapper">
+                                    <a href="#" title="edit-info" class="btn blue">
+                                        <div class="edit-icon">
+                                            <img src="images/edit.svg" alt="edit-icon">
+                                        </div>
+                                    </a>
+
+                                    <a href="#" title="delete-info" class="btn red">
+                                        <div class="delete-icon">
+                                            <img src="images/delete.svg" alt="delete-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-bottom">
+                            <td>
+                                <div class="user-name-wrapper">
+                                    <div class="image-block yellow">
+                                        <img src="images/user-5.svg" alt="user">
+                                    </div>
+                                    <div class="user-name"> Arlene McCoy
+                                    </div>
+                            </td>
+
+                            <td><a href=“tel:+61488850430”>+61488850430</a></td>
+
+                            <td><a href=“mailto:arlencem@gmail.com”>arlencem@gmail.com</a></td>
+
+                            <td>Staff</td>
+
+                            <td>Active</td>
+
+                            <td>5 hr ago</td>
+                            <td>
+                                <div class="image-wrapper">
+                                    <a href="#" title="edit-info" class="btn blue">
+                                        <div class="edit-icon">
+                                            <img src="images/edit.svg" alt="edit-icon">
+                                        </div>
+                                    </a>
+
+                                    <a href="#" title="delete-info" class="btn red">
+                                        <div class="delete-icon">
+                                            <img src="images/delete.svg" alt="delete-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-bottom">
+                            <td>
+                                <div class="user-name-wrapper">
+                                    <div class="image-block purple">
+                                        <img src="images/user-6.svg" alt="user">
+                                    </div>
+                                    <div class="user-name">Annette Black
+                                    </div>
+                            </td>
+
+                            <td><a href=“tel:+61480026121”>+61480026121</a></td>
+
+                            <td><a href=“mailto:annetteb@gmail.com”>annetteb@gmail.com</a></td>
+
+                            <td>Staff</td>
+
+                            <td>Active</td>
+
+                            <td>10 hr ago</td>
+                            <td>
+                                <div class="image-wrapper">
+                                    <a href="#" title="edit-info" class="btn blue">
+                                        <div class="edit-icon">
+                                            <img src="images/edit.svg" alt="edit-icon">
+                                        </div>
+                                    </a>
+
+                                    <a href="#" title="delete-info" class="btn red">
+                                        <div class="delete-icon">
+                                            <img src="images/delete.svg" alt="delete-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="inactive">
+                            <td>
+                                <div class="user-name-wrapper">
+                                    <div class="image-block">
+                                        <img src="images/user-7.svg" alt="user">
+                                    </div>
+                                    <div class="user-name">Cody Fisher
+                                    </div>
+                            </td>
+
+                            <td><a href=“tel:+61480028671”>+61480028671</a></td>
+
+                            <td><a href=“mailto:fcody261@gmail.com”>fcody261@gmail.com</a></td>
+
+                            <td>Staff</td>
+
+                            <td>Inactive</td>
+
+                            <td>2 hr ago</td>
+                            <td>
+                                <div class="image-wrapper">
+                                    <a href="#" title="edit-info" class="btn blue">
+                                        <div class="edit-icon">
+                                            <img src="images/edit.svg" alt="edit-icon">
+                                        </div>
+                                    </a>
+
+                                    <a href="#" title="delete-info" class="btn red">
+                                        <div class="delete-icon">
+                                            <img src="images/delete.svg" alt="delete-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-bottom">
+                            <td>
+                                <div class="user-name-wrapper">
+                                    <div class="image-block">
+                                        <img src="images/user-8.svg" alt="user">
+                                    </div>
+                                    <div class="user-name">Leslie Alexander
+                                    </div>
+                            </td>
+
+                            <td><a href=“tel:+61480013910”>+61480013910</a></td>
+
+                            <td><a href=“mailto:lesliea@gmail.com”>lesliea@gmail.com</a></td>
+
+                            <td>Staff</td>
+
+                            <td>Active</td>
+
+                            <td>1 hr ago</td>
+                            <td>
+                                <div class="image-wrapper">
+                                    <a href="#" title="edit-info" class="btn blue">
+                                        <div class="edit-icon">
+                                            <img src="images/edit.svg" alt="edit-icon">
+                                        </div>
+                                    </a>
+
+                                    <a href="#" title="delete-info" class="btn red">
+                                        <div class="delete-icon">
+                                            <img src="images/delete.svg" alt="delete-icon">
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                </div>
+                </table>
+            </div>
+
+            <!-- <div class="message-content">
+                <div class="message-sent">
+                    <div class="content-wrapper">
+                        <div class="message-title">
+                            <h3>Message Sent</h3>
+                        </div>
+                        <div class="drop-down-list">
+                            <select name="week" id="week">
+                                <option value="This-Week">This Week</option>
+                                <option value="week 1">week-1</option>
+                                <option value="week 2">week-2</option>
+                                <option value="week 3">week-3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/chart-img.png" alt="">
+                    </div>
+                </div>
+                <div class="last-message-notification">
+                    <div class="message-title">
+                        <h3>Your Last Messaget</h3>
+                        <span>NDS : todays general messages</span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    </div>
+                    <div class="sent-message-paltform">
+                        <span>Sent Via :</span>
+                        <div class="sent-message-paltform-wrapper">
+                            <a href="message.com" class="btn btn-message" title="Message">Message</a>
+                            <a href="email.com" class="btn btn-email" title="Email">Email</a>
+                            <a href="facebook.com" class="btn btn-facebook" title="Facebook">Facebook</a>
+                           
+                        </div>
+                        <div class="last-message-notification-bottom">
+                            <div class="notification-bottom-content">
+                            <span>Sent 02/12/2020</span>
+                            <span>10:22 am</span>
+                        </div>
+                        <div class="reply-btn">
+                            <a href="#" class="btn reply-btn">2 Reply</a>
+                        </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div> -->
     </div>
- </header>
-
-
- <aside class="side-navigation">
-    <div class="nav-wrapper">
-    <div class="logo-block">
-        <img src="images/school-managment-system-logo.svg" alt="logo">
     </div>
+    </main>
 
-    <nav class="nav-section">
-     
-        <ul class="nav-listing">
-            <li>
-                <a href="" class="active">
-                <em>
-                <img src="images/home-white.svg" alt="home" class="active-icon">
-                <img src="images/home.svg" alt="home" class="normal-icon">
-                </em>
-                Home </a>
-            </li>
-            <li>
-                <a href="">
-                <em>
-                <img src="images/my-school-white.svg" alt="my-school" class="active-icon">
-                <img src="images/my-school.svg" alt="my-school" class="normal-icon">
-                </em>
-                My Schools</a>
-            </li>
-            <li>
-                <a href="">
-                <em>
-                <img src="images/message-white.svg" alt="message" class="active-icon" >
-                <img src="images/message.svg" alt="message" class="normal-icon" >
-                </em>
-                Messages</a>
-            </li>
-            <li>
-                <a href="">
-                <em>
-                <img src="images/group-white.svg" alt="group" class="active-icon">
-                <img src="images/group.svg" alt="group" class="normal-icon">
-                </em>
-                Groups</a>
-            </li>
-            <li>
-                <a href="">
-                <em>
-                <img src="images/user-and-role-white.svg" alt="user-and-role" class="active-icon">
-                <img src="images/user-and-role.svg" alt="user-and-role" class="normal-icon">
-                </em>
-                Users and Roles</a>
-            </li>
-            <li> 
-                <a href="">
-                <em>
-                <img src="images/school-details-white.svg" alt="school-details" class="active-icon">
-                <img src="images/school-details.svg" alt="school-details" class="normal-icon">
-                </em>
-                School Details</a>
-            </li>
-            <li>
-                <a href="">
-                <em>
-                <img src="images/data-management-white.svg" alt="data-management" class="active-icon">
-                <img src="images/data-management.svg" alt="data-management" class="normal-icon">
-                </em>
-                Data Management</a>
-            </li>
-            <li>
-                <a href="">
-                <em>
-                    <img src="images/my-account-white.svg" alt="my-account" class="active-icon">
-                <img src="images/my-account.svg" alt="my-account" class="normal-icon">
-                </em>
-                My Account</a>
-            </li>
-            <li>
-                <a href="">
-                <em>
-                    <img src="images/contact-and-help-white.svg" alt="contact-and-help" class="active-icon">
-                <img src="images/contact-and-help.svg" alt="contact-and-help" class="normal-icon">
-                </em>
-                Contacts and Help</a>
-            </li>
-
-        </ul>
-    </div>
-    </nav>
-
-    <div class="footer-wrapper">
-    <div class="logout-section">
-        <a href="">
-        <em>
-        <img src="images/logout.svg" alt="">
-        </em>
-        Logout </a>
-       
-    </div>  
-    <div class="footer-bottom">  
-    <p><a href="">School management</a> | ©2023</P>  
-    </div> 
-</div>  
-
- </aside>
-
- 
- <main class="main-content">
-    <div class="page-inner-content">
-
-        <div class="home-content">
-            <div class="title">
-            <h1>Home</h1>
-        </div>
-        <div class="title-content">
-            <p>Last Refreshed 05/12/20222</p>
-        </div>
-        </div>
-        
- 
-
-    <div class="emergency-holiday-content-wrapper">
-        <div class="emergency-content-wrapper">
-            <div class="image-block">
-                <img src="images/emergency-icon.svg" alt="emergency-icon">
-            </div>
-
-            <div class="emergency-content">
-                <h2>Send <strong>Emergency Alert </strong> to all school</h2>
-                <a href="" title="emergency-alert"><img src="images/emergency-alert-icon.svg" alt="emergency-alert">Emergency Alert send now</a>
-            </div>
-
-        </div>
-        <div class="holiday-content-wrapper">
-            <div class="holiday-inner-content-wrapper">
-            <div class="image-block">
-                <img src="images/holiday-closure.png" alt="emergency-icon">
-            </div>
-
-            <div class="holiday-content">
-                <h2>School-links Holiday closure</h2>
-                <p>It’s that time of year again when everyone is gearing up to end 2022 with Christmas and New Year festivities Check fu..</p>
-                <div class="holiday-bottom-content-wrapper">
-                    <p>02/12/2022</p>
-                    <a href="#" title="read-me">Read me.</a>
-
-                </div>
-                </div>
-            </div>
-
-        </div>
-      
-    </div>
-
-
-    <div class="deliverd-message-section">
-        <div class="delivery-confirmed">
-            <div class="content-wrapper">
-                <div class="image-block">
-                    <img src="images/message-delivered.svg" alt="">
-                </div>
-                <div class="delivery-confirmed-content">
-                    <p>Delivery confirmed</p>
-                    <span>77</span>
-                </div>
-
-            </div>
-        </div>
-        <div class="delivery-failed">
-            <div class="content-wrapper">
-                <div class="image-block">
-                    <img src="images/message-failed.svg" alt="">
-                </div>
-                <div class="delivery-failed-content">
-                    <p>Delivery failed messages</p>
-                    <span>20</span>
-                </div>
-
-            </div>
-        </div>
-        
-        <div class="bounced-messages">
-            <div class="content-wrapper">
-                <div class="image-block">
-                    <img src="images/message-bounce.svg" alt="">
-                </div>
-                <div class="bounced-messages-content">
-                    <p>Bounced messages</p>
-                    <span>25</span>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-</main>
-
-
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
