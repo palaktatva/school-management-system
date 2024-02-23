@@ -249,7 +249,7 @@
             <div class="table-content-wrapper">
                 <div class="custom-title-content">
                     <div class="title-block">
-                        <h3 class="title">User</h3>
+                        <h2 class="title">Users</h2>
                     </div>
                     <div class="title-content">
                         <a href="#" title="View All">View All</a>
@@ -341,9 +341,6 @@
                         <tr class="border-bottom">
                             <td>
                                 <div class="user-name-wrapper">
-                                    <!-- <div class="image-block blue">
-                                        <img src="images/user-3.svg" alt="user">
-                                    </div> -->
                                     <span style="color: #1D8BFA; background-color:rgba(29, 139, 250, 0.1);
                                     ;">KW</span>
                                     <div class="user-name"> Kristin Watson
@@ -413,9 +410,6 @@
                         <tr class="border-bottom">
                             <td>
                                 <div class="user-name-wrapper">
-                                    <!-- <div class="image-block yellow">
-                                        <img src="images/user-5.svg" alt="user">
-                                    </div> -->
                                     <span style="color: #F78F1E; background-color:rgba(247, 143, 30, 0.1);">AM</span>
                                     <div class="user-name"> Arlene McCoy
                                     </div>
@@ -449,9 +443,6 @@
                         <tr class="border-bottom">
                             <td>
                                 <div class="user-name-wrapper">
-                                    <!-- <div class="image-block purple">
-                                        <img src="images/user-6.svg" alt="user">
-                                    </div> -->
                                     <span style="color: #BB65FF; background-color:rgba(187, 101, 255, 0.1);;">AB</span>
                                     <div class="user-name">Annette Black
                                     </div>
@@ -557,57 +548,70 @@
                 </table>
             </div>
 
-             <div class="message-content-wrapper">
-                <div class="message-sent">
-                    <div class="content-wrapper">
-                        <div class="message-title">
-                            <h3>Message Sent</h3>
+            <div class="message-content-wrapper">
+                <div class="content-wrapper">
+                    <div class="left-content-wrapper">
+                        <div class="message-sent">
+                            <div class="message-title">
+                                <h3>Message Sent</h3>
+                            </div>
+                            <div class="drop-down-list">
+                                <select class="week-selection" name="week">
+                                    <option value="This-Week">This Week</option>
+                                    <option value="week 1">week-1</option>
+                                    <option value="week 2">week-2</option>
+                                    <option value="week 3">week-3</option>
+                                  </select>            
+                            </div>
                         </div>
-                        <div class="drop-down-list">
-                            <select name="week" id="week">
-                                <option value="This-Week">This Week</option>
-                                <option value="week 1">week-1</option>
-                                <option value="week 2">week-2</option>
-                                <option value="week 3">week-3</option>
-                            </select>
+                        <div class="image-block">
+                            <img src="images/chart-img.png" alt="">
                         </div>
-                    </div>
-                    <div class="image-block">
-                        <img src="images/chart-img.png" alt="">
                     </div>
                 </div>
-                <div class="last-message-notification">
-                    <div class="message-title">
-                    <div class="title">
-                        <h3>Your Last Message</h3>
+                <div class="content-wrapper">
+                    <div class="right-content-wrapper">
+                        <div class="last-message-notification">
+                            <div class="message-title">
+                                <div class="title">
+                                    <h3>Your Last Message</h3>
+                                </div>
+                                <span>NDS : todays general messages</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been
+                                    the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                    took a
+                                    galley
+                                    of type and scrambled it to make a type specimen book. It has survived not only five
+                                    centuries,
+                                    but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            </div>
+                            <div class="sent-message-paltform">
+                                <p>Sent Via :</p>
+                                <div class="sent-message-paltform-wrapper">
+                                    <a href="message.com" class="btn btn-message" title="Message">Message</a>
+                                    <a href="email.com" class="btn btn-email" title="Email">Email</a>
+                                    <a href="facebook.com" class="btn btn-facebook" title="Facebook">Facebook</a>
+
+                                </div>
+                                <div class="last-message-notification-bottom">
+                                    <div class="notification-bottom-content">
+                                        <img src="images/send.svg" alt="send-icon">
+                                        <span>Sent 02/12/2020</span>
+                                        <span>10:22 am</span>
+                                    </div>
+                                    <div class="reply">
+                                        <a href="#" class="btn reply-btn" title="Reply">2 Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                        <span>NDS : todays general messages</span>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                    </div>
-                    <div class="sent-message-paltform">
-                        <span>Sent Via :</span>
-                        <div class="sent-message-paltform-wrapper">
-                            <a href="message.com" class="btn btn-message" title="Message">Message</a>
-                            <a href="email.com" class="btn btn-email" title="Email">Email</a>
-                            <a href="facebook.com" class="btn btn-facebook" title="Facebook">Facebook</a>
-                           
-                        </div>
-                        <div class="last-message-notification-bottom">
-                        <div class="notification-bottom-content">
-                            <span>Sent 02/12/2020</span>
-                            <span>10:22 am</span>
-                        </div>
-                        <div class="reply-btn">
-                            <a href="#" class="btn reply-btn">2 Reply</a>
-                        </div>
-                        </div>
-                    </div>
-                   
                 </div>
-            </div> 
+
+            </div>
     </div>
     </div>
     </main>
