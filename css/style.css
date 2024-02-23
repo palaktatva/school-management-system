@@ -334,7 +334,14 @@ h1 {
 }
 
 .form-group.checkbox-control input {
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0;
 }
 
 .form-group.checkbox-control input+label {
@@ -422,7 +429,7 @@ h1 {
 
 .side-navigation {
     padding: 27px 20px 20px;
-    background-color: #FAFAFA;
+    background-color:#FFFFFF;
     border-right: 1px solid #F7F7F7;
     position: fixed;
     height: 100%;
@@ -543,6 +550,9 @@ h1 {
 
 .site-header .header-content-wrapper .header-left-side .img-block {
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
 }
 
 .site-header .header-content-wrapper .header-left-side span {
@@ -592,14 +602,13 @@ h1 {
 }
 
 .header-left-side .hamburger-icon {
-
     display: flex;
     padding-right: 32px;
-    margin-bottom: 9px;
+    cursor: pointer;
 }
 
 .main-content {
-    padding: 111px 30px;
+    padding: 111px 30px 30px;
 }
 
 .custom-title-content {
@@ -640,7 +649,7 @@ h1 {
     justify-content: center;
     background-color: #FFF1F1;
     border-radius: 12px;
-    padding: 30px 0;
+    padding: 30px;
     box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.04);
 
 }
@@ -664,6 +673,8 @@ h1 {
 
 .emergency-holiday-content-wrapper .emergency-content a {
     height: 56px;
+    display: inline-flex;
+    align-items: center;
     background-color: #FF2E35;
     padding: 0 30px;
     color: #fff;
@@ -671,7 +682,7 @@ h1 {
     border-radius: 6px;
 }
 
-.emergency-holiday-content-wrapper .emergency-content a img {
+.emergency-holiday-content-wrapper .emergency-content a img{
     margin-right: 12px;
 }
 
@@ -864,12 +875,15 @@ h1 {
 }
 
 .table-content tr td .image-block {
-    height: 40px;
-    width: 40px;
     border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+}
+.table-content tr td span{
+    padding: 10px 9px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50%;
+    margin-right: 10px;
+
 }
 .table-content tr.inactive{
     opacity: 0.5;
@@ -884,4 +898,40 @@ h1 {
 }
 .table-content tr td .image-block.purple{
     background-color: rgba(187, 101, 255 , 10%);
+}
+.message-content-wrapper{
+    display: flex;
+    padding: 30px;
+    margin-bottom: -30px;
+}
+.message-content-wrapper .message-sent{
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin-right: 15px;
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.04);
+    padding: 30px 30px 25px;
+}
+.message-content-wrapper .last-message-notification{
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin-left: 15px;
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.04);
+    padding: 30px;
+}
+
+.message-content-wrapper .message-sent .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 49px;
+}
+.message-content-wrapper h3{
+    font-weight: 500;
+    font-size: 20px;
+    color: #212121;
+}
+.last-message-notification .message-title .title{
+    margin-bottom: 30px;
+}
+.last-message-notification .message-title .title span{
+
 }
