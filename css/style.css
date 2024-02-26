@@ -765,7 +765,7 @@ h1 {
 
 .count-block {
     display: flex;
-    margin: 0 -15px 24px;
+    margin: 0 -15px 8px;
 }
 
 .count-block-wrapper {
@@ -819,12 +819,11 @@ h1 {
     color: #1D8BFA;
 }
 .page-wrapper .table-content-inner-wrapper{
-    /* margin-bottom: 36px; */
-    margin-bottom:  0;
+    margin-bottom: 36px;
 }
 .table-content-inner-wrapper .table-content {
     border-radius: 12px;
-    padding: 0 30px;
+    padding: 14px 0 0 36px;
     box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.04);
     width: 100%;
 }
@@ -839,11 +838,10 @@ h1 {
 
 .table-content tr td {
     font-size: 14px;
-    padding: 15px 0 15px;
+    padding: 12px 0 12px;
     border-bottom: 1px solid #ECECEC;
     margin-bottom: 18px;
-    /* text-align: left; */
-    text-align: center;
+    text-align: left;
 }
 
 .table-content tr .user-name-wrapper {
@@ -859,6 +857,7 @@ h1 {
 .table-content tr td .image-wrapper {
     display: flex;
     align-items: center;
+    /* justify-content: center; */
 }
 
 .table-content tr td .edit-icon {
@@ -935,6 +934,7 @@ h1 {
 }
 
 .message-content-wrapper h3 {
+    line-height: 18px;
     font-weight: 500;
     font-size: 20px;
     color: #212121;
@@ -948,7 +948,7 @@ h1 {
     display: inline-block;
     color: #1D8BFA;
     font-weight: 500;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 }
 
 .message-title p {
@@ -1020,7 +1020,7 @@ h1 {
     padding: 0 10px;
 }
 .message-content-wrapper .image-block{
-    max-width: 400px;
+    max-width: 450px;
 }
 .select2-container{
     width: 100% !important;
