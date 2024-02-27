@@ -443,6 +443,15 @@ h1 {
     justify-content: space-between;
     transition: all 0.5s linear;
 }
+.nav-wrapper .image-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-wrapper .image-wrapper .image-block{
+    width: 25px;
+    cursor: pointer;
+    opacity: 0;
+} 
 .side-navigation .nav-wrapper{
     overflow: auto;
 }
@@ -805,8 +814,6 @@ h1 {
 }
 .holiday-content-wrapper .holiday-bottom-content-wrapper .date-content .image-block{
     margin-right: 8px;
-    position: relative;
-    top: 2px
 }
 
 .holiday-content-wrapper .holiday-bottom-content-wrapper a {
@@ -1105,9 +1112,6 @@ tbody {
 .notification-bottom-content span:not(:last-child) {
     padding: 0 10px;
 }
-.message-content-wrapper .image-block{
-    /* max-width: 450px; */
-}
 .select2-container--default .select2-selection--single .select2-selection__rendered{
     color:#000000;
     font-size: 14px;
@@ -1129,14 +1133,16 @@ tbody {
     content: " ";
     background-image: url(../images/select-menu-arrow.svg);
     position: absolute;
-    height: 26px;
-    top: 5px;
-    right: -12px;
-    width: 20px;
+    height: 14px;
+    top: 2px;
+    right: -4px;
+    width: 14px;
+    background-size: 14px 14px;
     cursor: pointer;
     background-repeat: no-repeat;
-   
-} 
+    background-position: center;
+}
+
 .select2-container .select2-selection--single {
     height: 40px;
 }
@@ -1153,6 +1159,10 @@ tbody {
 .select2-container--default .select2-results__option:hover{
     background-color: #1D8BFA;
     color: #FFFFFF;   
+
+}
+.select2-container--open .select2-selection__arrow B::after{
+     transform: rotate(180deg);    
 
 }
 
@@ -1177,9 +1187,14 @@ tbody {
 }
 @media (max-width:1300px){
     .emergency-holiday-content-wrapper .holiday-content-wrapper .holiday-bottom-content-wrapper {
-        display: block;
-    }
+        flex-direction: column;
+        align-items: flex-start;
 }
+.holiday-content-wrapper .holiday-bottom-content-wrapper .date-content {
+    order: 1;
+}
+    }
+
 @media (max-width:1432px){
     .count-block {
         flex-wrap: wrap;
@@ -1187,8 +1202,10 @@ tbody {
     .count-block-wrapper {
         flex: 0 0 50%;
         max-width: 50%;
-    }
+        margin-bottom: 10px;
 }
+    }
+
 /* @media (max-width:1148px){
     .count-block {
         flex-wrap: wrap;
@@ -1209,6 +1226,9 @@ tbody {
         padding: 20px;
     }
     .emergency-holiday-content-wrapper .emergency-content-wrapper{
+        padding: 20px !important;
+    }
+    .table-content-inner-wrapper .table-content {
         padding: 20px;
     }
     .message-content-wrapper {
@@ -1242,20 +1262,34 @@ tbody {
     .count-block-wrapper {
         flex: 0 0 100%;
         max-width: 100%;
+        margin-bottom: 10px;
     }
 } 
 
-
+@media (max-width:991px){
+    .site-header .header-right-side .school-name {
+        font-size: 14px;
+    }
+}
 @media (max-width:767px){
     .side-navigation {
         width: 100%;
-        height: auto;
-        position: relative;
-    }
-    .side-navigation .nav-listing li a{
-        display: flex;
+        height: 100%;
+        z-index: 5;
+        transition: all 0.5s;
     }
     .page-wrapper {
         padding-left: 0px;
+    }
+    .nav-wrapper .image-wrapper .image-block{      
+        margin-right: 10px;
+        opacity: 1;
+    } 
+    .open-menu .side-navigation{
+            left :-100%;
+            transition: all 0.5s;
+    }
+    .side-navigation .nav-listing li a {
+        /* max-width: 70%; */
     }
 }

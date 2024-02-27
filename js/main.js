@@ -11,7 +11,7 @@ jQuery(document).ready(function(){
       minimumResultsForSearch: Infinity
     });
 
-  jQuery('.hamburger-icon').click(function () {
+  jQuery('.hamburger-icon, .cross-icon').click(function () {
       jQuery('body').toggleClass('open-menu');
     }); 
 })
