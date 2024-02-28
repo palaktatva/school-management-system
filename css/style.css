@@ -450,14 +450,14 @@ h1 {
 }
 
 .nav-wrapper .image-wrapper .image-block {
-    width: 25px;
+    width: 20px;
     cursor: pointer;
     display: none;
 }
 
 .side-navigation .nav-listing {
     overflow: auto;
-    height: calc(100vh - 100px);
+    height: calc(88vh - 100px);
 }
 
 .nav-wrapper::-webkit-scrollbar {
@@ -666,14 +666,12 @@ h1 {
     position: absolute;
     bottom: 30px;
 } */
-*/
 
 /* .open-menu .header-left-side .hamburger-icon span:nth-child(2) {
     rotate: 180deg;
 } */
 .open-menu .header-left-side .hamburger-icon .img-block img{
     transform: rotate(180deg);
-    transition: all 0.5s;
 }
 
 .main-content {
@@ -1090,7 +1088,8 @@ tbody {
 
 .message-content-wrapper ul {
     display: flex;
-    margin-bottom: 28px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
 }
 
 .message-content-wrapper li:not(:last-child) {
@@ -1100,6 +1099,7 @@ tbody {
 .message-content-wrapper li {
     font-size: 14px;
     font-weight: 500;
+    padding-bottom: 10px;
 
 }
 
@@ -1124,6 +1124,7 @@ tbody {
 
 .last-message-notification .last-message-notification-bottom {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -1138,7 +1139,9 @@ tbody {
     align-items: center;
     font-size: 14px;
 }
-
+.last-message-notification .last-message-notification-bottom .reply{
+    margin-bottom: 10px;
+}
 .notification-bottom-content span:not(:last-child) {
     padding: 0 10px;
 }
@@ -1341,7 +1344,7 @@ tbody {
         padding-left: 0;
     }
 
-    .open-menu body {
+    .open-menu {
         overflow: hidden;
     }
 
@@ -1391,6 +1394,10 @@ tbody {
         right: 4px;
         width: 9px;
         background-size: 9px 9px;
+    }
+    .side-navigation .nav-listing li a {
+        display: inline-block;
+        width: 230px;
     }
 
 }
@@ -1507,8 +1514,9 @@ tbody {
     .site-header {
         padding: 15px;
     }
-}
-@media (max-width: 767px){
+    .message-title p {
+        margin-bottom: 25px;
+    }
     .holiday-content-wrapper .holiday-inner-content-wrapper .img-block {
         margin-bottom: 10px;
     }
@@ -1523,8 +1531,7 @@ tbody {
     }
 }
 @media (max-width: 375px) {
-    .site-header {
-        padding: 10px;
+    .last-message-notification .notification-bottom-content {
+        order: 1;
     }
-    
 }

@@ -12,7 +12,7 @@ jQuery(document).ready(function(){
     });
 
   jQuery('.hamburger-icon, .cross-icon').click(function () {
-      jQuery('body').toggleClass('open-menu');
+      jQuery('body, html').toggleClass('open-menu');
     }); 
     
 })
