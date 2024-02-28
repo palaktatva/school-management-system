@@ -671,7 +671,7 @@ h1 {
 /* .open-menu .header-left-side .hamburger-icon span:nth-child(2) {
     rotate: 180deg;
 } */
-.open-menu .header-left-side .hamburger-icon .img-block {
+.open-menu .header-left-side .hamburger-icon .img-block img{
     transform: rotate(180deg);
     transition: all 0.5s;
 }
@@ -1260,6 +1260,9 @@ tbody {
 
 @media (max-width:1199px) {
 
+    .main-content {
+        padding: 100px 20px 20px;
+    }
     .message-content-wrapper h3 {
         font-size: 18px;
     }
@@ -1362,7 +1365,7 @@ tbody {
     }
 
     .site-header .header-content-wrapper .header-left-side a {
-        width: 100px;
+        width: 122px;
         text-overflow: ellipsis;
         white-space: nowrap;
         display: block;
@@ -1371,6 +1374,23 @@ tbody {
 
     .site-header {
         padding: 20px;
+    }
+    .select2-container .select2-selection--single {
+        height: 30px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 30px;
+    }
+    .select2-container .select2-selection--single .select2-selection__rendered {
+        padding: 0 12px;
+        width: 120px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow B::after {
+        height: 9px;
+        top: 0px;
+        right: 4px;
+        width: 9px;
+        background-size: 9px 9px;
     }
 
 }
@@ -1421,7 +1441,16 @@ tbody {
 }
 
 @media (max-width: 767px) {
+    .header-left-side .hamburger-icon {
+        margin-right: 6px;
+    }
+    .header-left-side-inner .email-name-content {
+        padding-left: 6px;
+    }
 
+    .custom-title-content .title-content a {
+        font-size: 16px;
+    }
     .count-block .count-block-wrapper .count-block-content span {
         font-size: 18px;
     }
@@ -1489,4 +1518,13 @@ tbody {
     .emergency-holiday-content-wrapper .holiday-content-wrapper .holiday-inner-content-wrapper {
         flex-direction: column;
     }
+    .message-content-wrapper ul {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 375px) {
+    .site-header {
+        padding: 10px;
+    }
+    
 }
