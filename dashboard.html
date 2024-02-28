@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Dashboard</title>
 </head>
 
@@ -18,12 +19,6 @@
                             <div class="img-block">
                                 <img src="images/humbergur-menu.svg" alt="humbergur-menu">
                             </div>
-                            <!-- <span class="icon"></span>
-                            <span>
-                                <img src="images/hamburger-menu-arrow.svg" alt="humbergur-icon">
-                            </span>
-                            <span class="icon"></span> -->
-
                         </div>
                         <div class="image-block">
                             <img src="images/wade-wore.jpg" alt="wade-wore">
@@ -144,12 +139,32 @@
 
             <div class="footer-wrapper">
                 <div class="logout-section">
-                    <a href="">
-                        <em>
-                            <img src="images/logout.svg" alt="">
-                        </em>
+                    <a href="javascript:void(0)" class="modal-btn" data-link="logout-modal">
+                        <em> <img src="images/logout.svg" alt="logout"> </em>
                         Logout </a>
 
+                    <div class="custom-modal" data-target="logout-modal">
+                        <div class="custom-modal" data-target="logout-modal">
+                            <div class="modal-backdrop"></div>
+                            <div class="modal-content-wrapper">
+                                <div class="modal-dialog">
+                                    <div class="modal-inner-content">   
+                                        <div class="content-wrapper">                            
+                                        <div class="image-block">
+                                            <img src="images/logout-img.svg" alt="logout-img">
+                                        </div>
+                                        <span>Logout</span>
+                                        <p>Are you sure, You want to logout ?</p>
+                                        <div class="btn-wrapper">
+                                            <a href="#" class="btn modal-close" title="Cancel">Cancel</a>
+                                            <a href="#" class="btn modal-close" title="logout">Logout</a>
+                                        </div>
+                                    </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="footer-bottom">
                     <p><a href="">School management</a> | ©2023</P>
@@ -214,8 +229,7 @@
                                             <p>02/12/2022</p>
                                         </div>
                                         <div class="read-more-content">
-                                            <a href="#" title="Read 
-                                            more">Read more</a>
+                                            <a href="#" title="Read more">Read more</a>
                                         </div>
 
                                     </div>
@@ -567,7 +581,7 @@
                 </table>
             </div>
 
-           
+
     </div>
     <div class="message-content-wrapper">
         <div class="content-wrapper">
@@ -613,8 +627,8 @@
                         <ul>
                             <li><a href="message.com" class="btn btn-message" title="Message">Message</a></li>
                             <li><a href="email.com" class="btn btn-email" title="Email">Email</a></li>
-                            <li><a href="https\\:facebook.com" class="btn btn-facebook"
-                                    title="Facebook">Facebook</a></li>
+                            <li><a href="https\\:facebook.com" class="btn btn-facebook" title="Facebook">Facebook</a>
+                            </li>
                         </ul>
                         <div class="last-message-notification-bottom">
                             <div class="notification-bottom-content">
@@ -639,6 +653,7 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-migrate-1.4.1.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
 </body>
 
 </html>
