@@ -911,8 +911,11 @@ tbody {
     text-align: left;
 }
 
-.table-content tr.border-bottom td {
+/* .table-content tr.border-bottom td {
     border-bottom: 1px solid #ECECEC;
+} */
+.table-content tr:not(:last-child) td,th{
+    border-bottom: 1px solid #ECECEC; 
 }
 
 .table-content tr .user-name-wrapper {
@@ -945,8 +948,7 @@ tbody {
     justify-content: center;
     margin-right: 10px;
 }
-
-.table-content tr td .delete-icon {
+.delete-icon {
     height: 36px;
     width: 36px;
     border-radius: 6px;
@@ -1892,8 +1894,10 @@ a {
 }
 .search-content-wrapper .search-right-side button {
     position: absolute;
-    top: 35%;
-    left: 4%;
+    width: 16px;
+    max-width: 16px;
+    top: 19px;
+    left: 22px;
     border: none;
     background: transparent;
 
@@ -2291,15 +2295,23 @@ a {
 .message-content .title-content .image-block svg {
     top: 1px;
 }
-
+/* .message-content .table-content-inner-wrapper{
+    margin-bottom: 0;
+} */
+.message-content .table-content-inner-wrapper .table-content {
+    padding: 10px 10px 0 10px;
+}
 .custom-tab-wrapper .tab-heading-block ul{
     display: flex;
+    padding: 0 20px;
 }
 .custom-tab-wrapper .tab-heading-block ul li:not(:last-child){
     margin-right: 30px;
 }
 .custom-tab-wrapper .tab-heading-block ul li{
-    padding: 10px;
+    padding: 0 5px 10px;
+    font-size: 20px;
+    color:#606060;
 }
 .custom-tab-wrapper .tab-content-block .tab-inner-content:not(.active){
     display: none;
@@ -2318,18 +2330,40 @@ a {
 .sent-table tr td .image-wrapper{
     display: inline-flex;
 }
+.message-content tr th .image-block{
+    display: inline-flex;
+    margin-left: 5px;
+}
 .sent-table tr td .image-wrapper .image-block img{
     display: block;
 }
 .sent-table tr td .image-wrapper .image-block{
     margin-right:12px;
+    min-width: 10px;
+    width: 17px;
 }
-.message-content .table-content tr td span {
+.sent-table .table-content tr td span {
     display: block;
     font-size: 14px;
     font-weight: 400;
     padding:0;
     margin: 0;
+}
+.message-content .table-content tr td{
+    padding: 14px;
+}
+.sent-table .table-content tr td a .image-block{
+    width: 20px;
+    min-width: 20px;
+}
+.message-content .table-content tr th{
+    padding: 0 14px 14px ;
+    font-size: 14px;
+}
+.message-content .table-content tr td:nth-child(2){
+    white-space: wrap;
+    /* width: 309px;
+    min-width: 309px; */
 }
 .message-content .search-content-wrapper .search-left-side .drop-down-wrapper{
     display: flex;
@@ -2366,6 +2400,7 @@ a {
 .custom-pagination .custom-pagination-left p{
     font-weight: 500;
     font-size: 16px;
+    color: #000000;
 }
 .custom-pagination .custom-pagination-right{
     display: flex
@@ -2374,14 +2409,14 @@ a {
     display: flex;
 }
 .custom-pagination .custom-pagination-right .btn{
-    padding: 14px 17px;
+    padding: 9px 15px;
     border: 1px solid #CCCCCC;
     border-radius: 6px;
     margin: 0 7px;
 
 }
 .custom-pagination .custom-pagination-right ul li{
-    padding: 14px 17px;
+    padding: 7px 15px;
     border: 1px solid #CCCCCC;
     border-radius: 6px;
     margin: 0 7px;
@@ -2390,8 +2425,151 @@ a {
 .custom-pagination .custom-pagination-right ul li.active{
     color:#FFFFFF;
     background-color:#F78F1E;
+    padding: 9px 17px;
+}
+.custom-pagination .custom-pagination-right ul li span{
+    font-size: 16px;
+    display: block;
 }
 .custom-pagination .custom-pagination-right ul li a{
     font-size: 16px;
     color: #606060;
 }
+.received-table .table-content tr td span{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+.received-table .table-content tr td {
+    padding: 20px 20px 18px 0px;
+}
+.draft-table .table-content tr .image-wrapper a{
+    padding: 0 6px;
+}
+.view-btn{
+    height: 36px;
+    width: 36px;
+    border-radius: 6px;
+    background-color: rgb(247, 143, 30, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.send-btn{
+    height: 36px;
+    width: 36px;
+    border-radius: 6px;
+    background-color: rgb(29, 139, 250, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.template-section .tempalte-wrapper{
+    display: flex;
+    margin: -15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.template-section .tempalte{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.template-section .tempalte-content{
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.04);
+    padding: 30px;
+    border-radius: 12px;
+}
+.template-section .tempalte{
+    padding: 15px;
+}
+.template-section .tempalte-content h2{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.template-section .tempalte-content .image-block{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+.template-section .tempalte-content span:not(:last-child){
+    font-size: 14px;
+}
+.template-section .tempalte-content ul {
+    display: flex;
+}
+.template-section .tempalte-content .right-side-content{
+    display: inline-flex;
+    margin-right: 12px  ;
+}
+.template-section .tempalte-content .bottom-content{
+    display: flex;
+    justify-content: space-between;
+}
+.template-section .tempalte-content .bottom-content span{
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+.template-section .tempalte-content .bottom-content ul li{
+    color:#1D8BFA;
+    font-size: 16px;
+    font-weight: 500;
+}
+.template-section .tempalte-content .border-bottom{
+    height: 1px;
+    background-color:#ECECEC;
+    margin-bottom: 30px;
+}
+.message-content .search-content-wrapper .search-right-side button{
+    top:13px;
+    left:22px;
+}
+.template-section{
+    margin-bottom: 30px;
+}
+.content{
+    min-width: 200px;
+    width: 200px;
+}
+
+@media (max-width:1199px){
+    .custom-tab-wrapper .tab-heading-block ul li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:991px) {
+    .custom-tab-wrapper .tab-heading-block ul {
+        padding: 0 15px;
+    }
+    .search-content-wrapper {
+        margin-bottom: 10px;
+    }
+    .message-content .table-content tr th {
+        padding: 0 10px 10px;
+}
+.message-content .table-content tr td {
+    padding: 10px;
+}
+}
+@media (max-width:575px) {
+    .message-content .search-content-wrapper .search-right-side {
+        flex: 0 0 130px;
+        max-width: 130px;
+    }
+    .message-content .search-content-wrapper .search-right-side button {
+        top: 17px;
+        left: 7px;
+    }
+    .message-content .table-content tr td {
+        padding: 5px;
+    }
+
+}
+    
