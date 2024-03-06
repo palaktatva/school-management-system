@@ -7,7 +7,7 @@ document.write(
 
 jQuery(document).ready(function(){
 
-    jQuery('.week-selection').select2({
+    jQuery('.week-selection, .selection').select2({
       minimumResultsForSearch: Infinity
     });
 
@@ -39,8 +39,6 @@ jQuery(document).ready(function(){
       e.stopPropagation();
   })
 
-
-  
   jQuery(".custom-tab-wrapper .tab-heading-block ul li a").click(function (e) {
     e.preventDefault();
     var _link = jQuery(this).attr('data-link');

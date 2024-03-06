@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon/favicon.png">
     <title>message</title>
 </head>
 
@@ -92,7 +93,7 @@
                                     Groups</a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="user-and-roles.html">
                                     <em>
                                         <img src="images/user-and-role-white.svg" alt="user-and-role"
                                             class="active-icon">
@@ -165,7 +166,6 @@
                     </div>
                     <div class="title-content">
                         <a href="#" title="Create New Message" class="yellow-btn">
-                            <div class="image-block">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path class="white-icon"
@@ -181,8 +181,7 @@
                                         d="M16.3264 12.9961C15.785 12.9961 15.339 12.55 15.3346 12.0087C15.3346 11.7445 15.4386 11.4977 15.6248 11.3028C15.8153 11.1122 16.0622 11.0083 16.3264 11.0083C16.872 11.0083 17.3181 11.4544 17.3224 11.9957C17.3224 12.2599 17.2185 12.5067 17.0323 12.7016C16.8417 12.8878 16.5949 12.9961 16.3264 12.9961Z"
                                         fill="#F78F1E" stroke="#F78F1E" stroke-width="0.3" />
                                 </svg>
-                            </div>
-                            Create New Message
+                           <span>Create New Message</span> 
                         </a>
                     </div>
                 </div>
@@ -211,6 +210,22 @@
                                 <div class="search-side">
                                     <button><img src="images/search.svg" alt="search-img"></button>
                                     <input type="search" placeholder="Search" class="search-control">
+                                </div>
+                                <div class="search-left-side">
+                                    <div class="drop-down-wrapper">
+                                    <div class="drop-down-list">
+                                        <select class="week-selection" name="week">
+                                            <option value="Bounced">Bounced</option>
+                                            <option value="Unreceived">Unreceived</option>
+                                        </select>
+                                    </div>
+                                    <div class="drop-down-list">
+                                        <select class="week-selection" name="week">
+                                            <option value="This-Week">Today Only</option>
+                                            <option value="week 1">Email Only</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                             <div class="table-content-inner-wrapper sent-table">
@@ -575,14 +590,13 @@
                                     <input type="search" placeholder="Search" class="search-control">
                                 </div>
                                 <div class="search-left-side">
-                                    <div class="drop-down-wrapper">
+                                   
                                         <div class="drop-down-list">
                                             <select class="week-selection" name="week">
                                                 <option value="This-Week">Today Only</option>
                                                 <option value="week 1">Email Only</option>
                                             </select>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="table-content-inner-wrapper received-table">
@@ -746,14 +760,13 @@
                                     <input type="search" placeholder="Search" class="search-control">
                                 </div>
                                 <div class="search-left-side">
-                                    <div class="drop-down-wrapper">
+
                                         <div class="drop-down-list">
                                             <select class="week-selection" name="week">
                                                 <option value="This-Week">Today Only</option>
                                                 <option value="week 1">Email Only</option>
                                             </select>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="table-content-inner-wrapper draft-table sent-table">
@@ -1210,13 +1223,13 @@
 
                     </div>
                     <div class="tab-inner-content" data-tab="tab-4">
-                        <div class="search-content-wrapper ">
+                        <div class="search-content-wrapper tempalte-search">
                             <div class="search-side">
                                 <button><img src="images/search.svg" alt="search-img"></button>
                                 <input type="search" placeholder="Search template" class="search-control">
                             </div>
                             <div class="search-left-side tempalte-dropdown">
-                                <div class="drop-down-wrapper">
+
                                     <div class="drop-down-list">
                                         <label for="date">Date :</label>
                                         <select class="week-selection" name="week" id="date">
@@ -1224,7 +1237,6 @@
                                             <option value="week 1">Descending</option>
                                         </select>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div class="template-section">
