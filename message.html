@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
     <link rel="icon" type="image/png" href="images/favicon/favicon.png">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>message</title>
 </head>
 
@@ -120,7 +121,7 @@
                                     Data Management</a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="my-account">
                                     <em>
                                         <img src="images/my-account-white.svg" alt="my-account" class="active-icon">
                                         <img src="images/my-account.svg" alt="my-account" class="normal-icon">
@@ -214,13 +215,13 @@
                                 <div class="search-left-side">
                                     <div class="drop-down-wrapper">
                                     <div class="drop-down-list">
-                                        <select class="week-selection" name="week">
+                                        <select class="custom-dropdown" name="week">
                                             <option value="Bounced">Bounced</option>
                                             <option value="Unreceived">Unreceived</option>
                                         </select>
                                     </div>
                                     <div class="drop-down-list">
-                                        <select class="week-selection" name="week">
+                                        <select class="custom-dropdown" name="week">
                                             <option value="This-Week">Today Only</option>
                                             <option value="week 1">Email Only</option>
                                         </select>
@@ -592,7 +593,7 @@
                                 <div class="search-left-side">
                                    
                                         <div class="drop-down-list">
-                                            <select class="week-selection" name="week">
+                                            <select class="custom-dropdown" name="week">
                                                 <option value="This-Week">Today Only</option>
                                                 <option value="week 1">Email Only</option>
                                             </select>
@@ -762,7 +763,7 @@
                                 <div class="search-left-side">
 
                                         <div class="drop-down-list">
-                                            <select class="week-selection" name="week">
+                                            <select class="custom-dropdown" name="week">
                                                 <option value="This-Week">Today Only</option>
                                                 <option value="week 1">Email Only</option>
                                             </select>
@@ -1232,7 +1233,7 @@
 
                                     <div class="drop-down-list">
                                         <label for="date">Date :</label>
-                                        <select class="week-selection" name="week" id="date">
+                                        <select class="custom-dropdown" name="week" id="date">
                                             <option value="This-Week">Ascending</option>
                                             <option value="week 1">Descending</option>
                                         </select>
@@ -1451,8 +1452,8 @@
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript" src="js/select2.min.js"></script>
 </body>
 
 </html>

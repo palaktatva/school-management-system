@@ -1,5 +1,4 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
-@import url("select2.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 * {
@@ -1588,7 +1587,7 @@ th {
     }
 
     .holiday-content-wrapper .holiday-inner-content-wrapper .img-block {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     .emergency-content-wrapper .image-block img {
@@ -1857,16 +1856,12 @@ a {
     margin-bottom: 40px;
 }
 
-.custom-logout .btn-wrapper {
+.custom-modal  .btn-wrapper {
     display: flex;
     margin: 0 -15px;
 }
 
-.custom-logout .btn-wrapper a {
-    font-size: 18px;
-}
-
-.custom-logout .btn-wrapper .btn {
+.custom-modal .btn-wrapper .btn {
     min-width: 181px;
     margin: 0 12px;
     background-color: #FFFFFF;
@@ -1877,10 +1872,11 @@ a {
     display: flex;
     justify-content: center;
     padding: 5px 0;
+    font-size: 18px;
 
 }
 
-.custom-logout .btn-wrapper a:hover {
+.custom-modal  .btn-wrapper a:hover {
     color: #FFFFFF;
     background-color: #F78F1E;
     transition: all 0.5s;
@@ -3229,9 +3225,17 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 240px;
     margin-bottom: 0;
 }
-.button-wrapper{
+.user-form .button-wrapper{
     display: flex;
     justify-content: flex-end;
+}
+.custom-edit .image-block img{
+border-radius: 50%;
+width: 70px;
+height: 70px;
+}
+.custom-edit span{
+    font-size: 20px;
 }
 
 @media(max-width:575px) {

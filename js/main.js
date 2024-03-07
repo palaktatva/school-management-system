@@ -7,17 +7,11 @@ document.write(
 
 jQuery(document).ready(function(){
 
-    jQuery('.week-selection').select2({
-      minimumResultsForSearch: Infinity,  
-      
-    });
-    jQuery('.roles').select2({
-      minimumResultsForSearch: Infinity,  
-      placeholder: "Select a roles"
-    })
-    jQuery('.status').select2({
-      minimumResultsForSearch: Infinity,  
-      placeholder: "Select a status"
+    jQuery('.custom-dropdown').select2({
+      minimumResultsForSearch: Infinity, 
+      placeholder: function(){
+        $(this).data('data-placeholder');
+    } 
     })
 
   jQuery('.hamburger-icon, .cross-icon').click(function () {
