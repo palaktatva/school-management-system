@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
     <link rel="icon" type="image/png" href="images/favicon/favicon.png">
+    <link rel="stylesheet" href="./css/select2.min.css">
     <link rel="stylesheet" href="css/style.css">
+
     <title>User and Roles</title>
 </head>
 
@@ -226,13 +228,13 @@
                                             <td class="align-center">2 hr ago</td>
                                             <td>
                                                 <div class="image-wrapper">
-                                                    <a href="#" title="edit-info" class="btn blue">
+                                                    <a href="#" title="edit-info" class="btn blue" data-link="remove-user">
                                                         <div class="edit-icon">
                                                             <img src="images/edit.svg" alt="edit-icon">
                                                         </div>
                                                     </a>
             
-                                                    <a href="#" title="delete-info" class="btn red">
+                                                    <a href="#" title="delete-info" class="btn red modal-btn" data-link="remove-user">
                                                         <div class="delete-icon">
                                                             <img src="images/delete.svg" alt="delete-icon">
                                                         </div>
@@ -267,7 +269,7 @@
                                                         </div>
                                                     </a>
             
-                                                    <a href="#" title="delete-info" class="btn red">
+                                                    <a href="#" title="delete-info" class="btn red modal-btn" data-link="remove-user">
                                                         <div class="delete-icon">
                                                             <img src="images/delete.svg" alt="delete-icon">
                                                         </div>
@@ -301,7 +303,7 @@
                                                         </div>
                                                     </a>
             
-                                                    <a href="#" title="delete-info" class="btn red">
+                                                    <a href="#" title="delete-info" class="btn red modal-btn" data-link="remove-user">
                                                         <div class="delete-icon">
                                                             <img src="images/delete.svg" alt="delete-icon">
                                                         </div>
@@ -336,7 +338,7 @@
                                                         </div>
                                                     </a>
             
-                                                    <a href="#" title="delete-info" class="btn red">
+                                                    <a href="#" title="delete-info" class="btn red modal-btn" data-link="remove-user">
                                                         <div class="delete-icon">
                                                             <img src="images/delete.svg" alt="delete-icon">
                                                         </div>
@@ -369,7 +371,7 @@
                                                         </div>
                                                     </a>
             
-                                                    <a href="#" title="delete-info" class="btn red">
+                                                    <a href="#" title="delete-info" class="btn red modal-btn" data-link="remove-user">
                                                         <div class="delete-icon">
                                                             <img src="images/delete.svg" alt="delete-icon">
                                                         </div>
@@ -396,13 +398,13 @@
                                             <td class="align-center">10 hr ago</td>
                                             <td>
                                                 <div class="image-wrapper">
-                                                    <a href="#" title="edit-info" class="btn blue">
+                                                    <a href="#" title="edit-info" class="btn blue modal-btn" data-link="edit-user">
                                                         <div class="edit-icon">
                                                             <img src="images/edit.svg" alt="edit-icon">
                                                         </div>
                                                     </a>
             
-                                                    <a href="#" title="delete-info" class="btn red">
+                                                    <a href="#" title="delete-info" class="btn red modal-btn" data-link="remove-user">
                                                         <div class="delete-icon">
                                                             <img src="images/delete.svg" alt="delete-icon">
                                                         </div>
@@ -437,7 +439,7 @@
                                                         </div>
                                                     </a>
             
-                                                    <a href="#" title="delete-info" class="btn red">
+                                                    <a href="#" title="delete-info" class="btn red modal-btn" data-link="remove-user">
                                                         <div class="delete-icon">
                                                             <img src="images/delete.svg" alt="delete-icon">
                                                         </div>
@@ -472,7 +474,7 @@
                                                         </div>
                                                     </a>
             
-                                                    <a href="#" title="delete-info" class="btn red">
+                                                    <a href="#" title="delete-info" class="btn red modal-btn" data-link="remove-user">
                                                         <div class="delete-icon">
                                                             <img src="images/delete.svg" alt="delete-icon">
                                                         </div>
@@ -550,6 +552,63 @@
         </div>
 
     </div>
+    <div class="custom-modal custom-user-modal" data-target="remove-user">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content-wrapper">
+            <div class="modal-dialog">
+                <div class="modal-inner-content">
+                    <div class="content-wrapper">
+                    <div class="custom-heading-wrapper">
+                        <div class="heading">
+                        <h3>Remove user</h3>
+                        </div>
+                        <div class="cancel-button">
+                        <a href="#" class="modal-close"><img src="images/cross.svg" alt="Cancel"></a>
+                      </div>
+                    </div>
+                    <div class="border-bottom"></div>
+                    <form action="" class="user-form">
+                        <div class="form-wrapper">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="tel" placeholder="Enter Name" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="Phone">Phone Number</label>
+                                <input type="tel" placeholder="Enter Phone Number" class="form-control" id="Phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Enter Email Id" class="form-control" id="email">
+                            </div> 
+                            <div class="form-group">
+                                <label for="roles">Roles</label>
+                                <select class="selection roles" name="roles" id="-1">
+                                    <option value="" disabled selected>Select Role</option>
+                                    <option value="staff">Staff</option>
+                                    <option value="Admin">Admin</option>
+                                </select>
+                            </div>      
+                            <div class="form-group">
+                                <label for="status">Status</label>
+                                <select class="selection status" name="role" id="status">
+                                    <option value="" disabled selected >Select Status</option>
+                                    <option value="staff">Active</option>
+                                    <option value="Admin">Inactive</option>
+                                </select>
+                            </div>                             
+                            
+                        </div>
+                        <div class="button-wrapper">
+                            <button type="submit" class="primary-btn">Remove User</button>
+                        </div>
+
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="custom-modal custom-user-modal" data-target="add-user">
         <div class="modal-backdrop"></div>
         <div class="modal-content-wrapper">
@@ -581,21 +640,24 @@
                             </div> 
                             <div class="form-group">
                                 <label for="roles">Roles</label>
-                                <select class="selection" name="role">
+                                <select class="selection roles" name="roles">
                                     <option value="" disabled selected>Select Role</option>
                                     <option value="staff">Staff</option>
                                     <option value="Admin">Admin</option>
                                 </select>
                             </div>      
                             <div class="form-group">
-                                <label for="roles">Status</label>
-                                <select class="selection" name="role">
-                                    <option value="" disabled selected>Select Status</option>
+                                <label for="status">Status</label>
+                                <select class="selection status" name="role">
+                                    <option value="" disabled selected >Select Status</option>
                                     <option value="staff">Active</option>
                                     <option value="Admin">Inactive</option>
                                 </select>
                             </div>                             
-                            <button type="submit" class="primary-btn">Sign in</button>
+                            
+                        </div>
+                        <div class="button-wrapper">
+                            <button type="submit" class="primary-btn">Add User</button>
                         </div>
 
                     </form>
@@ -604,7 +666,17 @@
             </div>
         </div>
     </div>
+   
+    <div class="custom-modal custom-edit-modal" data-target="edit-user">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog">
+            <div class="modal-inner-content">
+                <div class="content-wrapper"></div>
+            </div>
+        </div>
     </div>
+    </div>
+
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-migrate-1.4.1.min.js"></script>

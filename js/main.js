@@ -7,9 +7,18 @@ document.write(
 
 jQuery(document).ready(function(){
 
-    jQuery('.week-selection, .selection').select2({
-      minimumResultsForSearch: Infinity
+    jQuery('.week-selection').select2({
+      minimumResultsForSearch: Infinity,  
+      
     });
+    jQuery('.roles').select2({
+      minimumResultsForSearch: Infinity,  
+      placeholder: "Select a roles"
+    })
+    jQuery('.status').select2({
+      minimumResultsForSearch: Infinity,  
+      placeholder: "Select a status"
+    })
 
   jQuery('.hamburger-icon, .cross-icon').click(function () {
       jQuery('body, html').toggleClass('open-menu');
@@ -48,8 +57,5 @@ jQuery(document).ready(function(){
     jQuery(this).closest('.custom-tab-wrapper').find('.tab-inner-content[data-tab="'+_link+'"]').siblings().removeClass('active');
   });
 
-    
   })
     
-
-
