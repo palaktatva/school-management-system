@@ -122,7 +122,7 @@
                                     Data Management</a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="my-account.html">
                                     <em>
                                         <img src="images/my-account-white.svg" alt="my-account" class="active-icon">
                                         <img src="images/my-account.svg" alt="my-account" class="normal-icon">
@@ -130,7 +130,7 @@
                                     My Account</a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="accounts-and-help.html">
                                     <em>
                                         <img src="images/contact-and-help-white.svg" alt="contact-and-help"
                                             class="active-icon">
@@ -294,6 +294,7 @@
                                         </div>
                                         <div class="user-name">Jerome Bell
                                         </div>
+                                    </div>   
                                 </td>
 
                                 <td><a href=“tel:+61092156867”>+61092156867</a></td>
@@ -329,6 +330,7 @@
                                         </div>
                                         <div class="user-name">Kathryn Murphy
                                         </div>
+                                    </div>
                                 </td>
 
                                 <td><a href=“tel:+61488805460”>+61488805460</a></td>
@@ -359,10 +361,10 @@
                             <tr>
                                 <td>
                                     <div class="user-name-wrapper user-name">
-                                        <span style="color: #1D8BFA; background-color:rgba(29, 139, 250, 0.1);
-                                    ;">KW</span>
+                                        <span style="color: #1D8BFA; background-color:rgba(29, 139, 250, 0.1);">KW</span>
                                         <div class="user-name"> Kristin Watson
                                         </div>
+                                    </div>
                                 </td>
 
                                 <td><a href=“tel:+61488827086”>+61488827086</a></td>
@@ -398,6 +400,7 @@
                                         </div>
                                         <div class="user-name">Jenny Wilson
                                         </div>
+                                    </div>
                                 </td>
 
                                 <td><a href=“tel:+61480025873”>+61480025873</a></td>
@@ -432,6 +435,7 @@
                                             style="color: #F78F1E; background-color:rgba(247, 143, 30, 0.1);">AM</span>
                                         <div class="user-name"> Arlene McCoy
                                         </div>
+                                    </div>
                                 </td>
 
                                 <td><a href=“tel:+61488850430”>+61488850430</a></td>
@@ -466,6 +470,7 @@
                                             style="color: #BB65FF; background-color:rgba(187, 101, 255, 0.1);;">AB</span>
                                         <div class="user-name">Annette Black
                                         </div>
+                                    </div>
                                 </td>
 
                                 <td><a href=“tel:+61480026121”>+61480026121</a></td>
@@ -500,6 +505,7 @@
                                             <img src="images/user-7.svg" alt="user">
                                         </div>
                                         <div class="user-name">Cody Fisher</div>
+                                    </div>
                                 </td>
 
                                 <td><a href=“tel:+61480028671”>+61480028671</a></td>
@@ -535,6 +541,7 @@
                                         </div>
                                         <div class="user-name">Leslie Alexander
                                         </div>
+                                    </div>
                                 </td>
 
                                 <td><a href=“tel:+61480013910”>+61480013910</a></td>
@@ -657,7 +664,7 @@
         </div>
 
     </div>
-    <div class="custom-modal custom-user-modal" data-target="remove-user">
+    <div class="custom-modal custom-user-modal" data-target="edit-user">
         <div class="modal-backdrop"></div>
         <div class="modal-content-wrapper">
             <div class="modal-dialog">
@@ -688,7 +695,7 @@
                             </div> 
                             <div class="form-group">
                                 <label for="roles">Roles</label>
-                                <select class="selection roles" name="roles" id="-1">
+                                <select class="custom-dropdown" name="roles" data-placeholder="Select Role" >
                                     <option value="" disabled selected>Select Role</option>
                                     <option value="staff">Staff</option>
                                     <option value="Admin">Admin</option>
@@ -696,7 +703,7 @@
                             </div>      
                             <div class="form-group">
                                 <label for="status">Status</label>
-                                <select class="selection status" name="role" id="status">
+                                <select class="custom-dropdown" name="status" data-placeholder="Select Status" >
                                     <option value="" disabled selected >Select Status</option>
                                     <option value="staff">Active</option>
                                     <option value="Admin">Inactive</option>
@@ -705,7 +712,7 @@
                             
                         </div>
                         <div class="button-wrapper">
-                            <button type="submit" class="primary-btn">Remove User</button>
+                            <button type="submit" class="primary-btn">Update Details</button>
                         </div>
 
                     </form>
@@ -714,7 +721,7 @@
             </div>
         </div>
     </div>
-    <div class="custom-modal custom-logout custom-edit" data-target="edit-user">
+    <div class="custom-modal custom-logout custom-edit" data-target="remove-user">
         <div class="modal-backdrop"></div>
         <div class="modal-content-wrapper">
             <div class="modal-dialog">
@@ -727,7 +734,7 @@
                         <p>Are you sure, You want to remove this user?</p>
                         <div class="btn-wrapper">
                             <a href="#" class="btn modal-close" title="Cancel">Cancel</a>
-                            <a href="#" class="btn modal-close" title="logout">Logout</a>
+                            <a href="#" class="btn modal-close" title="logout">Remove</a>
                         </div>
                     </div>
                 </div>
