@@ -130,7 +130,7 @@
                                     My Account</a>
                             </li>
                             <li>
-                                <a href="accounts-and-help.html">
+                                <a href="contacts-and-help.html">
                                     <em>
                                         <img src="images/contact-and-help-white.svg" alt="contact-and-help"
                                             class="active-icon">
@@ -141,27 +141,25 @@
                             </li>
 
                         </ul>
+                </div>
+                </nav>
 
-                    </nav>
+                <div class="footer-wrapper">
+                    <div class="logout-section">
+                        <a href="javascript:void(0)" class="modal-btn" data-link="logout-modal">
+                            <em> <img src="images/logout.svg" alt="logout"> </em>
+                            Logout </a>
 
-                    <div class="footer-wrapper">
-                        <div class="logout-section">
-                            <a href="javascript:void(0)" class="modal-btn" data-link="logout-modal">
-                                <em> <img src="images/logout.svg" alt="logout"> </em>
-                                Logout </a>
-
-
-                        </div>
-                        <div class="footer-bottom">
-                            <p><a href="">School management</a> | ©2023</P>
-                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p><a href="">School management</a> | ©2023</P>
                     </div>
                 </div>
+
             </aside>
 
 
             <div class="page-inner-content my-account">
-
                 <div class="custom-title-content">
                     <div class="title-block">
                         <h1 class="title">My Account</h1>
@@ -172,105 +170,115 @@
                     <div class="tab-heading-block">
                         <ul>
                             <li class="active">
-                                <a href="#" data-link="tab-1">Account Details</a>
+                                <a href="#" data-link="account-details">Account Details</a>
                             </li>
                             <li>
-                                <a href="#" data-link="tab-2">Change Password</a>
+                                <a href="#" data-link="change-password">Change Password</a>
                             </li>
                         </ul>
                     </div>
                     <div class="tab-content-block">
-                        <div class="tab-inner-content active custom-background" data-tab="tab-1">
-                            <div class="account-details">
-                                <div class="image-block">
-                                    <img src="images/user-profile.svg" alt="user-profile">
-                                    <div class="edit-icon">
-                                        <input type="file">
-                                        <em>
-                                            <img src="images/edit-icon.svg" alt="edit">
-                                        </em>
+                        <div class="tab-inner-content active custom-background" data-tab="account-details">
+
+                            <div class="my-account-wrapper account-details">
+                                <div class="my-account-wrapper-inner">
+                                    <div class="image-block">
+                                        <div class="profile-block">
+                                        <img src="images/user-profile.svg" alt="user-profile">
+                                         </div>
+                                        <div class="edit-block">
+                                            <input type="file">
+                                            <em>
+                                                <img src="images/edit-icon.svg" alt="edit">
+                                            </em>
+                                        </div>
                                     </div>
+
+                                    <form class="user-form">
+
+                                        <div class="form-wrapper">
+                                            <div class="form-group">
+                                                <label for="name1">Name</label>
+                                                <input type="text" placeholder="Enter Name" class="form-control"
+                                                    id="name1">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="name1">Last Name</label>
+                                                <input type="text" placeholder="Enter last Name" class="form-control"
+                                                    id="name1">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email2">Email Id</label>
+                                                <input type="email" placeholder="Enter Email Id" class="form-control"
+                                                    id="email2">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Phone">Phone Number</label>
+                                                <input type="tel" placeholder="Enter Phone Number" class="form-control"
+                                                    id="Phone">
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label for="roles">Primary School of Operation</label>
+                                                <select class="custom-dropdown" name="roles"
+                                                    data-placeholder="Select your school">
+                                                    <option value="" disabled selected>Select School</option>
+                                                    <option value="nodoworry">Nodoworry School</option>
+                                                    <option value="tooradin">Tooradin School</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
                                 </div>
 
-                                <form class="user-form">
-                                    <div class="form-outer-wrapper">
-                                    <div class="form-wrapper">
-                                        <div class="form-group">
-                                            <label for="name1">Name</label>
-                                            <input type="text" placeholder="Enter Name" class="form-control" id="name1">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="name1">Last Name</label>
-                                            <input type="text" placeholder="Enter last Name" class="form-control"
-                                                id="name1">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="email2">Email Id</label>
-                                            <input type="email" placeholder="Enter Email Id" class="form-control"
-                                                id="email2">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="Phone">Phone Number</label>
-                                            <input type="tel" placeholder="Enter Phone Number" class="form-control"
-                                                id="Phone">
-                                        </div>
-                                 
-
-                                        <div class="form-group">
-                                            <label for="roles">Primary School of Operation</label>
-                                            <select class="custom-dropdown" name="roles"
-                                                data-placeholder="Select your school">
-                                                <option value="" disabled selected>Select School</option>
-                                                <option value="nodoworry">Nodoworry School</option>
-                                                <option value="tooradin">Tooradin School</option>
-                                            </select>
-                                        </div>
-
-                                    </div>
+                                <div class="button-wrapper">
+                                    <button type="submit" class="primary-btn">Save Details</button>
                                 </div>
-                                    <div class="button-wrapper">
-                                        <button type="submit" class="primary-btn">Save Details</button>
-                                    </div>
 
                                 </form>
                             </div>
                         </div>
-                        <div class="tab-inner-content custom-background" data-tab="tab-2">
-                            <form class="user-form">
-                                <div class="form-outer-wrapper">
-                                    <div class="form-wrapper">
-                                        <div class="form-group-outer">
-                                        <div class="form-group">
-                                            <label for="password1">Old Password</label>
-                                            <input type="password" placeholder="Enter old password" class="form-control"
-                                                id="password1">
+                        <div class="tab-inner-content custom-background" data-tab="change-password">
+                            <div class="my-account-wrapper">
+                                <div class="my-account-wrapper-inner">
+                                    <form class="user-form">
+                                        <div class="form-outer-wrapper">
+                                            <div class="form-wrapper">
+                                                <div class="form-group-outer">
+                                                    <div class="form-group">
+                                                        <label for="password1">Old Password</label>
+                                                        <input type="password" placeholder="Enter old password"
+                                                            class="form-control" id="password1">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password2">New Password</label>
+                                                    <input type="password" placeholder="Enter new password"
+                                                        class="form-control" id="password2">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password3">Confirm Password</label>
+                                                    <input type="password" placeholder="Enter confirm password"
+                                                        class="form-control" id="password3">
+                                                </div>
+
+
+                                            </div>
                                         </div>
                                     </div>
-                                        <div class="form-group">
-                                            <label for="password2">New Password</label>
-                                            <input type="password" placeholder="Enter new password" class="form-control"
-                                                id="password2">
+
+                                        <div class="button-wrapper">
+                                            <button type="submit" class="primary-btn">Change Password</button>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="password3">Confirm Password</label>
-                                            <input type="password" placeholder="Enter confirm password"
-                                                class="form-control" id="password3">
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <div class="button-wrapper">
-                                    <button type="submit" class="primary-btn">Change Password</button>
-                                </div>
-
-                            </form>
+                               
+                                </form>
+                            </div>
                         </div>
                     </div>
+
+
                 </div>
-
-
-            </div>
         </main>
 
 
