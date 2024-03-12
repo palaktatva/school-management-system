@@ -1,10 +1,3 @@
-document.write(
-	'<script type="text/javascript" src="js/select2.min.js"></script>'
-	);
-
-
-
-
 jQuery(document).ready(function(){
 
     jQuery('.custom-dropdown').select2({
